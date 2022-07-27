@@ -1,0 +1,105 @@
+    // ----------Code Reuseable classes--------------------
+    @import "reusable-mixins";
+    @import "color-variables";
+    // ----------------@import Section-----------------
+    @import "about-us-page";
+    @import "author-page";
+    @import "book-detail-page";
+    @import "help-page";
+    @import "log-in-page";
+    @import "newly-books-page";
+    @import "sign-up-page"; // -------------Body Section----------------------------
+    * {
+      @include auto-margin-padding;
+    }
+    
+    .nav-item a:hover {
+      text-shadow: 1px 0px 1px #faf9f9;
+    }
+    
+    .home {
+      @include body-background-color;
+      .btn-primary {
+        border-radius: 2rem;
+        &:hover {
+          @include hover-effect;
+          color: $green;
+        }
+      }
+      .authimg {
+        &:hover {
+          transform: scale(1.4);
+          transition: 700ms;
+        }
+      }
+      .info-content {
+        padding: 1rem;
+        color: $blck;
+        background-color: $a_blu;
+        .inf {
+          &:hover {
+            transform: scale(1.02);
+            transition: 700ms;
+            text-shadow: 2rem;
+          }
+        }
+        .auth1 {
+          margin: auto;
+        }
+      }
+      .info-content1 {
+        padding: 1rem;
+        color: $blck;
+        background-color: $a_blu;
+        .auth2 {
+          margin: auto;
+        }
+        .inf {
+          &:hover {
+            transform: scale(1.02);
+            transition: 700ms;
+            text-shadow: 2rem;
+          }
+        }
+      }
+      .ecarts {
+        @include background-remover;
+        background-image: url("../images/home/pdf.jpg");
+        // ../images/home/bgcrt.avif
+        // background-image: $crt_bg;
+        .price {
+          @include Under-line-Remover;
+          color: $blck;
+          .pr:hover {
+            @include hover-effect;
+            transform: scale(1.5);
+          }
+        }
+      }
+      .ecarts1 {
+        @include background-remover;
+        background-image: url("../images/home/e-book.jpg");
+        .price {
+          @include Under-line-Remover;
+          color: $blck;
+          .pr:hover {
+            @include hover-effect;
+            transform: scale(1.5);
+          }
+        }
+      }
+      .ecarts2 {
+        @include background-remover;
+        background-image: url("../images/home/pout.avif");
+        // ../images/home/bgcrt.avif
+        // background-image: $crt_bg;
+        .price {
+          @include Under-line-Remover;
+          color: $blck;
+          .pr:hover {
+            @include hover-effect;
+            transform: scale(1.5);
+          }
+        }
+      }
+    }

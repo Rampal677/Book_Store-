@@ -1,0 +1,60 @@
+@import "reusable-mixins";
+@import "color-variables";
+$fs: 2.5rem;
+$bdr_rds: 30px;
+* {
+  @include auto-margin-padding;
+}
+
+.login {
+  .Row {
+    overflow-x: hidden;
+    background-color: $l_rw_bg;
+    background-image: $bg_img;
+    background: $wht;
+    border-radius: $bdr_rds;
+    box-shadow: 12px 12px 12px;
+    h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Ms Madi', cursive;
+    }
+    .inp {
+      height: 50px;
+      width: 70%;
+      border-radius: 60px;
+      border-color: $bdr_clr;
+    }
+    .btn1 {
+      height: 50px;
+      width: 200px;
+      margin-left: 1rem;
+      border: none;
+      outline: none;
+      border-radius: 60px;
+      font-weight: 600;
+      background: $btb_bg;
+      color: $wht;
+      &:hover {
+        background: $bdr_clr;
+        transition: 0.5s;
+      }
+    }
+  }
+  .fa-facebook {
+    font-size: $fs;
+    color: $fb_clr;
+    cursor: pointer;
+  }
+  .fa-google-plus-g {
+    font-size: $fs;
+    color: $rd;
+    cursor: pointer;
+  }
+  .insta {
+    font-size: $fs;
+    color: $brwn;
+    cursor: pointer;
+  }
+}

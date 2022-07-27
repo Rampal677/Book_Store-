@@ -1,0 +1,57 @@
+@import "reusable-mixins";
+@import "color-variables";
+$b_rds: 50%;
+* {
+  @include auto-margin-padding;
+}
+
+.author {
+  @include body-background-color;
+  ul {
+    text-align: justify;
+    li {
+      .atrCnt {
+        background-color: $atr_bg;
+        padding: 5%;
+        margin-top: 40px;
+        border-radius: 2%;
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          a {
+            color: $authName;
+            font-weight: bold;
+            @include Under-line-Remover;
+          }
+        }
+        .read {
+          @include Under-line-Remover;
+          color: $rd;
+          &:hover {
+            cursor: pointer;
+            color: $blu;
+          }
+        }
+        p {
+          text-align: justify;
+        }
+        span,
+        p,
+        ul,
+        ol,
+        table,
+        label,
+        input {
+          font-family: 'Lato', sans-serif;
+          color: $f_fmly;
+        }
+      }
+      .atrImg {
+        padding: 2%;
+        float: left;
+        margin-right: rem;
+        border-radius: $b_rds;
+      }
+    }
+  }
+}

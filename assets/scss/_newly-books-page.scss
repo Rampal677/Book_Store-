@@ -1,0 +1,22 @@
+@import "reusable-mixins";
+@import "color-variables";
+* {
+  @include auto-margin-padding;
+}
+
+.newArvl {
+  @include body-background-color;
+  .sortBox {
+    @include pre-customised-shadow;
+    border-radius: 60px;
+    box-shadow: -7px 16px 41px -11px $bx_shdw;
+  }
+  .card {
+    @include background-remover;
+    color: $an_wht;
+    .img-fluid:hover {
+      @include hover-effect;
+      @include pre-customised-shadow;
+    }
+  }
+}

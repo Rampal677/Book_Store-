@@ -1,0 +1,9 @@
+// --------------Import Section--------------
+@import "reusable-mixins";
+// -----------------Classes section-------------
+.bookDtl {
+  @include body-background-color;
+  .card {
+    @include background-remover
+  }
+}

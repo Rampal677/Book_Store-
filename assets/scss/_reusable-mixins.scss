@@ -1,0 +1,42 @@
+@import "color-variables";
+@mixin auto-margin-padding {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin icon-style {
+  font-size: 2.5rem;
+  color: $brwn;
+  cursor: pointer;
+}
+
+@mixin Under-line-Remover {
+  text-decoration: none;
+}
+
+@mixin body-background-color {
+  overflow-x: hidden;
+  background-color: $bdy_clr;
+  background-image: $bdy_grd_clr;
+}
+
+@mixin pre-customised-shadow {
+  -webkit-box-shadow: -7px 16px 41px -11px $c_shdw;
+  -moz-box-shadow: -7px 16px 41px -11px $c_shdw;
+}
+
+@mixin hover-effect {
+  transform: scale(1.08);
+  transition: 500ms;
+}
+
+@mixin background-remover {
+  background: none;
+  border: none;
+}
+
+@mixin auto-margin {
+  margin: auto;
+  padding: 1;
+}

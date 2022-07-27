@@ -1,0 +1,41 @@
+@import "reusable-mixins";
+@import "color-variables";
+* {
+  @include auto-margin-padding;
+}
+
+.help {
+  @include body-background-color;
+  a {
+    @include Under-line-Remover;
+  }
+  .mlph:hover {
+    @include hover-effect;
+  }
+  .card {
+    @include pre-customised-shadow;
+    .hlp:hover {
+      color: $rd;
+      transform: scale(1.1);
+      transition: 200ms;
+    }
+    .icon:hover {
+      @include hover-effect;
+    }
+    .text:hover {
+      @include hover-effect;
+      border-radius: 20px;
+      @include pre-customised-shadow;
+    }
+    .cancel,
+    .post {
+      @include background-remover;
+      &:hover {
+        color: $rd;
+      }
+    }
+    .card-footer {
+      background-color: #f8f9fa;
+    }
+  }
+}

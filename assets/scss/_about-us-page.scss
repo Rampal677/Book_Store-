@@ -1,0 +1,16 @@
+// --------------Import-----------
+@import "reusable-mixins";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutus {
+  .container {
+    .anr {
+      @include Under-line-Remover;
+      color: red;
+    }
+  }
+}
